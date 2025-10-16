@@ -11,12 +11,16 @@ a:hover {
 }
 
 header .box {
-  padding: 10px 0;
+  padding: 7px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-header .box h1 {
+header .box .boxstart h1 {
   font-size: 22px;
 }
-header .box .btn {
+header .box .boxsign .btn {
   padding: 12px 18px;
   background-color: #0d6efd;
   color: #ffffff;
@@ -32,9 +36,11 @@ header .box .btn {
 }
 #generate .box {
   height: 600px;
-  width: 600px;
   display: flex;
   flex-direction: column;
+}
+#generate .box .textbox {
+  width: 600px;
 }
 #generate .box .textbox h1 {
   color: #ffffff;
@@ -47,6 +53,7 @@ header .box .btn {
 }
 #generate .box .minibox .add input {
   border: 1px solid #ced4da;
+  display: block;
   width: 500px;
   margin: 12px 0 12px -50px;
   font-size: 22px;
@@ -63,4 +70,29 @@ header .box .btn {
   color: #ffffff;
   opacity: 0.7;
   border-radius: 8px;
+}
+@media (max-width: 768px) {
+  #generate .box .textbox h1 {
+    font-size: 40px;
+  }
+  #generate .box .minibox .add input {
+    width: 400px;
+    margin: 12px 0 12px 20px;
+  }
+}
+@media (max-width: 576px) {
+  #generate .box .textbox {
+    width: 450px;
+  }
+  #generate .box .minibox .add input {
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  #generate .box .textbox {
+    width: 350px;
+  }
+  #generate .box .minibox .add input {
+    width: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */
