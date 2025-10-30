@@ -284,20 +284,28 @@ footer {
   background-color: #f8f9fa;
   padding: 60px 0;
 }
-footer .box .textbox h2 {
+footer .box ul {
+  display: flex;
+}
+footer .box ul li {
+  margin: 15px 8px;
+}
+footer .box ul li a {
   color: #0d6efd;
   font-size: 18px;
   text-decoration: underline;
-  margin-bottom: 15px;
+}
+footer .box ul li:hover a {
+  cursor: pointer;
 }
 footer .box .minibox .icon {
   font-size: 12px;
   color: rgb(116, 116, 116);
   padding-top: 3px;
 }
-footer .box .minibox h3 {
+footer .box .minibox p {
   font-size: 16px;
-  margin-left: 3px;
+  margin-left: -11px;
   color: rgb(116, 116, 116);
 }
 footer .box .icon {
