@@ -305,11 +305,44 @@ footer .box .minibox .icon {
 }
 footer .box .minibox p {
   font-size: 16px;
-  margin-left: -11px;
   color: rgb(116, 116, 116);
 }
-footer .box .icon {
+footer .box .boxcn {
+  display: flex;
+  justify-content: flex-end;
+}
+footer .box .boxcn .icon {
   font-size: 28px;
   color: #0d6efd;
   margin: 0 15px;
+}
+@media (max-width: 992px) {
+  footer .box {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .box ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer .box .minibox {
+    display: flex;
+    justify-content: center;
+  }
+  footer .box .minibox p {
+    margin: 0 0 40px 0;
+  }
+  footer .box .boxcn {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  footer .box ul {
+    display: flex;
+    flex-flow: wrap;
+  }
+  footer .box ul li {
+    margin: 0 8px 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
